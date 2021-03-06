@@ -22,7 +22,7 @@ body {
 }
 
 h1{
-    font-size: clamp(2vw, 8vw, 8rem);
+    font-size: clamp(2vw, 8vw, 4rem);
 
 }
 
@@ -33,7 +33,7 @@ header {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  height:48vh;
+  height:80vh;
 
   display: flex;
   justify-content: center;
