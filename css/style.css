@@ -14,16 +14,10 @@ body {
 
   font-size: clamp(12px, 18px, 24px);
 
-  background-position: center;
+ 
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
-  
-}
-
-h1{
-   
-
+  background-size: cover; */
 }
 
 
@@ -33,7 +27,7 @@ header {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  height:80vh;
+  height:100vh;
 
   display: flex;
   justify-content: center;
@@ -92,10 +86,61 @@ a:hover {
   padding-bottom: 6px;
   padding-top: none;
   font-size: clamp(0.5vw, 1.2rem , 3rem);
+  font-family: 'Roboto', sans-serif;
 }
 
 /*imagensssssssssssssssssssssssssssssssssssss*/
+
+.portfolio{
+    padding:2em; 
+    height: 100vh;
+}
+
+.portfolio h2{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    margin-bottom:0.4em;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 2em;/*espaco entre grids*/
+    /* grid-template-columns: 240px 240px; quebrou a tela, ent vi no nav quantos px nescessarios para n precisar rolar a tela para o lado... */
+
+    justify-content: center;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid{
+        grid-template-columns: 240px 240px;
+
+    }
+
+}
+
+@media (min-width: 840px) {
+    .portfolio .grid{
+        grid-template-columns: repeat(3,240px);
+        /* alinhar o bloco do grid todo no meio da tela */
+        align-content: center;
+        justify-content:center;
+        height:calc(100vh - 8em - 48px);
+    }
+
+}
+
+
+/* como nem todo grid vai receber o text allign colocamos... */
+.portfolio figure{  
+    text-align: center;
+}
+
 .img-portfolio {
   width: 180px;
-  height: 180px;
+  height: 240px;
+  object-fit: cover; /*pega as ft e dxa elas bonitinha no formato que eu especifiquei aqui em cima sz*/
+  object-position: left bottom; /*pra especificaar a parte que tu quer focar na ft FUNCIONA COM PIXELS TAMBEM EIXO X  E Y*/
+
+  border-radius: 1em;
 }
+
