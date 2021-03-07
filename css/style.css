@@ -22,7 +22,7 @@ body {
 }
 
 h1{
-    font-size: clamp(2vw, 8vw, 4rem);
+   
 
 }
 
@@ -80,10 +80,18 @@ a:hover {
 .site-title,
 .site-subtitle {
   text-align: center;
-  padding-top: 12px;
+  padding-top: none;
 }
+
+.site-title {
+    font-family: 'Lobster',cursive;
+    font-size: clamp(2vw, 10vw, 4rem);
+  }
+
 .site-subtitle {
   padding-bottom: 6px;
+  padding-top: none;
+  font-size: clamp(0.5vw, 1.2rem , 3rem);
 }
 
 /*imagensssssssssssssssssssssssssssssssssssss*/
