@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(http://source.unsplash.com/random?dark-background-sig=7);
+  background-image: url(https://wallpaperaccess.com/full/1595904.jpg);
   background-size: auto 100vh;
   height: 100vh;
 
@@ -50,9 +50,9 @@ header {
 }
 
 .menu a:hover{
-  background-color: teal;
+  background-color: black;
   color:whitesmoke;
-  transition: background-color 500ms, color 500ms
+  transition: background-color 400ms, color 400ms
 }
 
 a {
@@ -90,6 +90,7 @@ a:hover {
   }
 
 .site-subtitle {
+  color: rgb(179, 179, 179);
   padding-bottom: 6px;
   padding-top: none;
   font-size: clamp(0.5vw, 1.2rem , 3rem);
@@ -115,6 +116,11 @@ a:hover {
     /* grid-template-columns: 240px 240px; quebrou a tela, ent vi no nav quantos px nescessarios para n precisar rolar a tela para o lado... */
 
     justify-content: center;
+}
+figcaption {
+  display: block;
+  color:rgb(179, 179, 179);
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 560px) {
@@ -172,4 +178,11 @@ a:hover {
   animation-duration: 700ms;
   transition: text-shadow 300ms;
 
+}
+.about{
+  color: white;
+}
+
+.about p{
+  padding: 12px;
 }
